@@ -1,5 +1,7 @@
 #! /usr/bin/env node
 import inquirer from "inquirer";
+import chalk from "chalk"
+console.log(chalk.bold.greenBright("\n\tWELCOME\n\t"),chalk.italic.yellowBright("\n Simple Calculator By Hashir Raees \n"))
 
 const answer = await inquirer.prompt([
   { message: "enter first number", type: "number", name: "firstnumber" },
